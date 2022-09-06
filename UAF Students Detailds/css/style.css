@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+body{
+    background-image: linear-gradient(to right top, #1b6c3f, #007566, #007a91, #007cb3, #2577c5);
+    
+}
+main{
+    display:grid;
+    align-items: center;
+}
+.logo{
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+.logo h1{
+    text-align: center;
+    text-shadow: 5px 6px 4px  rgba(73, 74, 73, 0.37);
+    /* padding-top:80px; */
+    font-size: 40px;
+    color:#ffffff;
+    
+}
+.search-bar{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    /* padding-left:450px;
+    padding-right:450px; */
+    padding-top:20px;
+}
+.search-bar input{
+    text-align: center;
+ background-color: #45ba7a;
+    color: white;
+    font-weight:700;
+    height:40px;
+    width:400px;
+    outline: none;
+    border-radius:12px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
+}
+.search-bar input::placeholder{
+    color: white;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.btn button{
+    margin-top:30px;
+    border-radius:20px;
+    height:45px;
+    width:200px;
+    border:none;
+    box-shadow: 4px 10px 5px 0px rgba(18, 58, 127, 0.61);
+-webkit-box-shadow: 4px 10px 5px 0px rgba(18, 58, 127, 0.61);
+-moz-box-shadow: 4px 10px 5px 0px rgba(18, 58, 127, 0.61);
+background-color: azure;
+}
+.btn button:hover{
+    background: #2577c5;
+    color:white;
+}
+.details{
+    display: grid;
+    grid-template-columns:1fr  600px;
+    align-items:center;
+    grid-template-columns: repeat(2,12rem);
+    grid-template-rows: repeat(2,2rem);
+    grid-gap: 0.8rem;
+    overflow: hidden;
+width:auto;
+column-width: auto;
+    justify-content: center;
+   text-align:center;
+padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+.logo h1{
+    padding-top:0px;
+    font-size:30px;
+   }
+   .btn button{
+    width: 150px;
+   }
+   .search-bar input{
+    width: 300px;
+   }
+  }
