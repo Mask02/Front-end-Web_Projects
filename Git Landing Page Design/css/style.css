@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0efe7;
+  max-width: 900px;
+  margin: auto;
+}
+header {
+  background-color: #f0efe7;
+}
+/*  Website logo Css */
+#logo {
+  margin-top: 16px;
+  margin-left: 26px;
+}
+
+/* Heading Text CSS */
+
+#headline {
+    position:absolute;
+    margin: 20px;
+    font-weight: 500;
+    font-size: x-large;
+    color: #9a9994;
+}
+
+/* Search Input */
+
+#search{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 15rem;
+    margin-top:1.5rem;
+}
+#search-input{
+    border:2px solid #9a9994;
+    border-radius: 16px;
+}

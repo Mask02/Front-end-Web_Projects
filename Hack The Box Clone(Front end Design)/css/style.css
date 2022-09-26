@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+padding: 0px;
+margin: 0px;
+color: white;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #111927;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f1823;
+    /* background-color:rgb(31, 44, 38); */
+    height:120px;
+}
+.navbar-links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+   padding-left: 100px;
+   list-style:none;
+}
+.navbar-links ul a{
+    text-decoration: none;
+    font-weight: 600;
+    opacity:60%;
+} 
+.navbar-links ul a:hover{
+    opacity:100%;
+    
+}
+.navbar-links ul a:active{
+    color: green;
+}
+.sign-in{
+    position: absolute;
+    right:0;
+    top: 0;
+    padding-top: 50px;
+    margin-right: 100px;
+    text-decoration: none;
+    color:#9fef00;
+    opacity: 100%;
+    }
+    .sign-in:hover{
+        color: white;
+    }
+.bi-chevron-right{
+    position: absolute;
+    top: 55px;
+    color: #9fef00!important;
+}
+.hacker{
+    background:linear-gradient(to top, #1A2332 0.5, #141D2B 15%);
+}
+.hacker-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:large;
+    height:130px;
+    box-shadow: 0px 3px 6px 0px rgba(12,17,23,0.75);
+-webkit-box-shadow: 0px 3px 6px 0px rgba(12,17,23,0.75);
+-moz-box-shadow: 0px 3px 6px 0px rgba(12,17,23,0.75);
+}
+.hacker-nav-head img{
+    height: 60px;
+    padding-left:25px;
+}
+.hacker-navbar-link ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-right: 200px;
+   list-style:none;
+}
+.hacker-navbar-link li{
+    opacity: 60%;
+    cursor: pointer;
+}
+.hacker-navbar-link li:hover{
+    opacity: 100%;
+}
+.hacker-btn{
+    height:70px;
+    width: 220px;
+    margin-right:50px;
+    color: #9fef00;
+background-color: #0f1823;
+    border:none;
+    border-radius:5px;
+}
+.hacker-btn:hover{
+    background-color: #9fef00;
+    color:rgb(28, 49, 39);
+    cursor: pointer;
+}
+.hacker-hero-sec{
+    font-size: 100px;
+    text-align: center;
+    padding-top: 95px;
+    font-weight: bolder;
+}
+.hacker-hero-sub-sec{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 70%;
+}

@@ -19,7 +19,7 @@ function show(value) {
     is_equal_pressed = false;
     is_operand_pressed = false;
 
-  } else if (value == "=") {
+  }  else if (value == "=") {
 
     result = eval(input_value);
 
@@ -47,7 +47,15 @@ function show(value) {
 
       is_equal_pressed = false;
 
-    }else if (!is_operand_pressed || !isNaN(value)){
+    }
+    else if (value == "Del"){
+
+      input_value = input_value.substring(0 ,input_value.length - 1)
+      document.getElementsByClassName("input-screen")[0].innerText = input_value;
+      is_equal_pressed = false;
+      is_operand_pressed = false;
+    }
+    else if (!is_operand_pressed || !isNaN(value)){
        
         input_value += value;
 
@@ -57,7 +65,7 @@ function show(value) {
 
     }
 
-    if(isNaN(value))
+    if(isNaN(value) && value != "Del")
         is_operand_pressed = true;
     else
         is_operand_pressed = false;

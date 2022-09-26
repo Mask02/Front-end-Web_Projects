@@ -103,12 +103,13 @@ background: radial-gradient(circle, rgba(108,103,194,1) 0%, rgba(189,83,179,1) 5
   text-align: center;
   color: white;
   font-size: larger;
+  touch-action: none;
   box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
 }
 .cal-btn-sec div:hover{
-  background-color: darkslategray;
+  background-color: rgb(16, 36, 36);
 }
 #plus-btn{
     height:8.7rem;
